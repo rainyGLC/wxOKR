@@ -1,0 +1,129 @@
+.lunar-container{
+  min-height: 100%;
+  padding:150rpx 24rpx;
+}
+.lunar-logo{
+  width: 200rpx;
+  height: 200rpx;
+  margin:0 auto;
+}
+.lunar-logo .logo-image{
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.lunar-name-input{
+  position: relative;
+  display: flex;
+  height: 68rpx;
+  margin-top:142rpx;
+  padding:0 40rpx;
+  border-bottom: 1px solid #333;
+}
+.lunar-name-input .name-image{
+  width: 30rpx;
+  height: 27rpx;
+  position:absolute;
+  top:3rpx;
+  left:0;
+}
+.name-image .name-map{
+  width: 100%;
+  height: 100%;
+}
+.lunar-name-input .name-input{
+  padding-left:20rpx;
+  height: 30rpx;
+  width: 600rpx;
+  border:none;
+  font-size: 28rpx;
+}
+.lunar-pass-input{
+  position: relative;
+  display: flex;
+  margin-top:37rpx;
+  padding:0 40rpx;
+  height: 68rpx;
+  border-bottom: 1px solid #333;
+}
+.lunar-pass-input .lunar-pass-image{
+  position: absolute;
+  top:3rpx;
+  left:0;
+  width: 30rpx;
+  height: 38rpx;
+}
+.lunar-pass-image .lunar-pass-map{
+  width: 100%;
+  height: 100%;
+}
+.lunar-pass-input .pass-input{
+  padding-left:20rpx;
+  height: 30rpx;
+  width: 600rpx;
+  border:none;
+  outline: none;
+  font-size: 28rpx;
+}
+.show-container{
+  height: 24rpx;
+  margin-top:30rpx;
+}
+.show-container .lunar-input-slip{
+  text-align: left;
+  padding-left: 30rpx;
+  margin-top:30rpx;
+  display: block;
+  font-size: 0;
+}
+.lunar-input-slip .lunar-slip-image{
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+}
+.lunar-slip-image .lunar-slip-map{
+  display: inline-block;
+  width: 100%;
+  height: 100%
+}
+.lunar-input-slip .slip-title{
+  display: inline-block;
+  font-size: 28rpx;
+  color: #ff1d25;
+  margin-left:8rpx;
+}
+.lunar-button-container{
+  margin-top:170rpx;
+  width: 690rpx;
+  height: 88rpx;
+  background-color: #000;
+  display: inline-block;
+  border-radius: 5px;
+  font-size: 32rpx;
+  color: #fff;
+  outline: none;
+}
+.login-methods{
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  width: 690rpx;
+}
+.methods-title{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #999;
+}
+.others-way{
+  line-height: 40rpx;
+}
+.icon-weixin, .icon-qq, .icon-weiruan{
+  width: 45rpx;
+  height: 45rpx;
+}
+
+
+
+
+

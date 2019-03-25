@@ -1,0 +1,37 @@
+<view class="page-container">
+  <view class="notReflection-container">
+    <view class="todos-section">
+
+      <view class="todos-topbar">
+        <image class="topbar-background" src="/images/notReflection-tab.png"></image>
+        <navigator class="topbar-operation step-1" url="/pages/today_todos/today_todos">今日</navigator>
+        <navigator class="topbar-operation step-2" url="/pages/history_todo/history_todo">历史</navigator>
+        <navigator class="topbar-operation step-3" url="/pages/my_okr/my_okr">我的OKR</navigator>
+      </view>
+
+      <view class="todos-content">
+
+        <view class="todos-today">
+          <view class="todos-title">今日三件事</view>
+          <view class="todos-list" wx:for="todos" wx:key="uniqu">
+            <view class="todos-item">
+              <view class="todo-work">
+                <text class="work-title">{{item.value}}</text></view>
+              <view class="todos-click">OkR</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="todos-happiness">
+          <text class="happiness-title">今日小确幸</text>
+          <view class="happiness-text">{{surprise}}</view>
+        </view>
+      </view>
+
+      <view class="todos-confirm" bindtap="bindAdd">今日反思</view>
+      <view class="todos-reflect">
+        <text class="reflect-title">{{notreflection}}</text>
+      </view>
+    </view>
+  </view>
+</view>

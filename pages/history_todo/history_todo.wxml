@@ -1,0 +1,51 @@
+<view class="page-container">
+  <view class="history-contact">
+    <view class="major-container">
+      <view class="history_top_item">
+        <navigator class="nav-list-item-link" url="/pages/today_todos/today_todos">今天</navigator>
+        <navigator class="nav-list-item-link" url="/pages/history_todo/history_todo">历史</navigator>
+        <navigator class="nav-list-item-link" url="/pages/my_okr/my_okr">我的OKR</navigator>
+      </view>
+      <view class="container">
+        <text class="time_top"></text>
+        <view class="todos-today">
+          <text class="todos-title">今日三件事</text>
+          <view class="todos-list">
+            <view class="todos-item">
+              <view class="todo-work"></view>
+              <div class="todos-click">OKR</div>
+            </view>
+          </view>
+        </view>
+        <view class="container_second">
+          <view class="second-tilte">今日小确幸</view>
+          <view></view>
+          <view class="second-surprise">今日小确幸</view>
+        </view>
+        <view class="container_third">
+          <text class="third-title">今日反思</text>
+          <text class="thired-reflect">反思</text>
+        </view>
+        <view class="container_fourth">
+          <view>
+            <text>幸福五元素</text>
+            <view></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  
+    <view class="state-section" hidden>
+      <view class="state-container">
+        <view class="state-title">
+          <text class="state-title-text">已关联KR</text>
+          <image src="/images/history-icon_close.png" class="state-map"></image>
+        </view>
+        <view class="state-desc">
+          <text></text>
+        </view>
+        <button>知道了</button>
+      </view>
+    </view>
+  </view>
+</view>

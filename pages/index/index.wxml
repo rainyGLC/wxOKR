@@ -1,13 +1,22 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+<view class="page-container">
+  <view class="lunar-container">
+    <view class="lunar-welcome">
+      <view class="lunar-logo">
+        <image class="lunar-logo-image" src="/images/greet-logo.png"></image>
+      </view>
+      <view class="lunar-title">探月学院OKR</view>
+      <view class="lunar-content">
+        <view class="lunar-desc-chinese">
+          我对阳光有信心。我对雨水有信心。我深信春天会再来。我对自己更有信心。
+        </view>
+        <view class="lunar-desc-english">
+          I have confidence in sunshine. I have confidence in rain. I have confidence that spring will come again. Besides which you see I have confidence in me.
+        </view>
+        <view class="lunar-suffix">——音乐之声 The Sound of Music (1965)</view>
+      </view>
+      <navigator class="lunar-button" url="/pages/login/login">
+        <button class="lunar-button-container"> 开启今天</button>
+      </navigator>   
+    </view>
   </view>
 </view>

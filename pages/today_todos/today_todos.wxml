@@ -1,0 +1,90 @@
+<view class="page-container">
+  <view class="not-section">
+    <view class="todos-contaner active">
+      <view class="todos-section">
+        <view class="nav-list">
+          <navigator class="nav-list-item-link" url="/pages/today_todos/today_todos">今天</navigator>
+          <navigator class="nav-list-item-link" url="/pages/history_todo/history_todo">历史</navigator>
+          <navigator class="nav-list-item-link" url="/pages/my_okr/my_okr">我的OKR</navigator>
+        </view>
+        <view class="todos-content">
+          <text class="todos-title">今日三件事</text>
+          <view class="todos-content-list">
+            <view class="todos-content-item">
+              <view class="todos-item-input">
+                <input class="todos-item-title" type="text" placeholder="想想是否与目标相关" value="{{todoOne}}" bindinput="todoOneInput" />
+              </view>
+              <view class="todos-click" data-index="1" bindtap="relevance">OKR</view>
+            </view>
+            <view class="todos-content-item">
+              <view class="todos-item-input">
+                <input class="todos-item-title" type="text" placeholder="想想完成的标准是什么" value="{{todoTwo}}" bindinput="todoTwoInput" />
+              </view>
+              <text class="todos-click" data-index="2" bindtap="relevance">OKR</text>
+            </view>
+            <view class="todos-content-item">
+              <view class="todos-item-input">
+                <input class="todos-item-title" type="text" placeholder="想想描述的是否清晰" value="{{todoThree}}" bindinput="todoThereInput" />
+              </view>
+              <view class="todos-click" data-index="3" bindtap="relevance">OKR</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="todos-happiness">
+          <text class="happiness-title">今日小确幸</text>
+          <view class="happiness-inputbox">
+            <input class="happiness-text" type="text" placeholder='微小但确切的幸福' value="{{surprise}}" bindinput="happinessInput" />
+          </view>
+        </view>
+      </view>
+      <view class="todos-confirm" bindtap="save">保存</view>
+      <view class="todos-confirm-hint">
+        <image class="todos-images" src="/images/icon_notice.png"></image>
+        <text class="todos-text">拉钩，保存了就不许修改啦！</text>
+      </view>
+    </view>
+    <view class="shade-contanter" hidden="{{show}}">
+      <view class="shade-popup">
+        <view class="shade-blocklevel">
+          <view class="shade-topbar">
+            <text class="shade-title">请选择要关联的KR</text>
+            <image class="shade-topbar-clone" src="/images/icon_close.png" bindtap="hindeBtn"></image>
+          </view>
+          <view class="overflow">
+            <view class="shade-main-content">
+              <view class="shade-content" 
+                wx:for="{{objectivesArr}}" wx:key="unique" wx:for-item="item" wx:for-index="objective_index">
+                <view class="shade-content-title">
+                  <text class="shade-Chinese">{{item.objective}}</text>
+                </view>
+                <view class="shade-content-list" wx:for="{{item.keyresults}}"
+                  wx:key="unique" wx:for-item="data" wx:for-index="keysult_index">
+
+                  <view class="shade-content-text {{data.active ? 'active' : ''}}"  data-id="{{data.id}}" data-obj_index ="{{objective_index}}" 
+                    data-kr_index="{{keysult_index}}"
+                    data-title="{{data.keyresult}}" data-active="{{data.active}}" bindtap="highlight">
+                    <text class="shade-text-chinese">{{item.id}} {{objective_index}} {{data.keyresult}}</text>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="shade-select">
+              <view class="shade-select-block">
+                <text class="shade-text-title">已选择</text>
+                <view class="shade-text-list" wx:for="{{temporary}}" 
+                  wx:for-item="item" wx:key="unique">
+                  <text class="shade-text-item">{{item}}</text>
+                </view>
+                <view>
+                  <text class="temporary-title"></text>
+                </view>
+              </view>
+            </view>
+            <view class="confirm-button" bindtap="ensure">确定</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,102 @@
+.body-coat{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 100%;
+  background-color:#f7f7f7;
+}
+.bodymain{
+  background-color: #fff;
+}
+.bodymain .nav-list{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px 5px 0 0;
+  background-color: #a7cae4;
+  height: 89rpx;
+  font-size: 0;
+}
+.nav-list-item{
+  display: inline-block;
+  text-align: center;
+  height:90rpx;
+  line-height:90rpx;
+  width: 33%;
+  font-size: 28rpx;
+  margin:0;
+  color: #333;
+}
+.nav-list-item:last-child{
+  border-bottom: #fff;
+  background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAABkCAYAAABJqeZKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTggKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NERGQkU3MDMzM0YxMTFFOTk5MDRFQjQ2RDQwNTg2NUEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NERGQkU3MDQzM0YxMTFFOTk5MDRFQjQ2RDQwNTg2NUEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0REZCRTcwMTMzRjExMUU5OTkwNEVCNDZENDA1ODY1QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0REZCRTcwMjMzRjExMUU5OTkwNEVCNDZENDA1ODY1QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqbEF1QAAASTSURBVHja7N1NiFV1HMbxvzUzlY5v5EuJmjWj4JDmC9KkmxG1TJkMmVSIQqZxUJuN0U5EVy5ctGpdixb5km0UETcKQgW92oQLFV8rcScSiJZOz89zE0Z09F4nmPN/vh94BBcKc/7nmd//nnvPPcP6+voS+hmmzFGWKq1KszJFGan8pXDAMNiuKreUK8pl5ZJyUvlVOaHc+F9OdMp/VxR8s/K+MonDgSHiuvKtcljZp5yn/IPneWW70qnUc65hCIuyfqN8quxX/qb8tYvCf6KM5rxCyVxUdihfKP9Q/kfXqHyudHAOoeR+VrqVH6r9h08YHqyJynGKj0zMVb5TtilPMvkHfn1/TJnBOYMMHVHeUa5R/v5GVyb+LM4RZKxXWZaKtw3Z9ld+zi8pPgzEOX5UGU/5C1uVNzkvYGKmckAZ7r7tn5+KCyJ1nBMws1dZ6zr5o/CfUXyYWpOKT61alj/e/5zNOQBju5Qmt23/KOW0MoH1h7lDykqnyd9D8YE7VihLXCb/iFTc/TSOdQfu+ElZoNzOffJ3U3ygn3lKe+6Tv0E5l7gnH7jXMWVxzpN/HcUH7qtNacm1/PEVXB+xxsADdeVa/teVV1hf4IE6KkMyu/JvYW2BAcV3VbbmVv6WyuQHMLAVuZW/57/tDIABtcUfubzVNyYV33XeyLoCD3VTGZvL5O+i+MAji8/CzM6h/PEzfMh6AlWZm0P54yOL01hLoCotOZSfqQ9Ur6nsF/zi7b3fElf5gWqdLPvk30jxgZqML/Pkj6v7vyeeswfU4maZJ/+7FB+oWUOZJ/8viZt4gJqVdfIvpPiAZ/k3sXTA4ynjtj++my8u9D3F8gFek7+T4gN+kz9+WcWDOF5i6QCvyb+c4gOe5edCH2C47X9BOZvyf7gowOS/RxfFB/wmf51yIfEwDsBu8rdTfMCz/N0sFeC37X9ROcPrfcBv8m+g+IDf5K9XLirPsVSA1+R/i+IDnuXfyBIBftv+plTcxMMXdAJmk38DxQf8Jn9c6IsHb05kiQCvyd9O8QHP8n/A0gB+2/6pyrnEB3sAu8nfSfEBv8kfpT+vTGFpAK/Jv5ziA57l50IfYLjtj8/wx0089SwL4DX511N8wG/yx8d4TynNLAngNfnbKD7gWf4ulgLw2/Y/q/yRePgmYDf536P4gOfk71VeZikAr8n/GsUHPMvPhT7AcNs/SvlTGcEyAF6Tfx3FBzzL38nhB/y2/XGRr5fDD/hNfm7dBQwnf0MqPtE3jsMPeE3+VRQf8Cw/W37AcNvP13IDppP/DYoPeJa/jUMO+G374xfNZWUChx3wmvwLKT7gWf71HG7Ab9sf7+vHd/I/wyEHvCZ/D8UH/CZ/vM4/nYr79wEYTf6dFB/wm/xLlSOpeCIPAJPyx4M3v1cmc5gBn21/3Lb7FcUHvMofxd+jLOLwAj7lf1rZrbzNoQWGtrpB/L9ii/+1soDDCvhM/tXKjxQf8Cl/s3JQ2Z+4aQew2PbPVz5WOgb5pQOAIVj+mPIrU/GknVYOHZBP+eNTeGOUxsoWfpoyXZmjvFr5O4BM/CvAALgs5MtedjYwAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.bodymain-container{
+  margin-top:20px;
+  padding:0 30px;
+}
+.enddata-main{
+  margin-bottom: 19rpx;
+  font-size: 32rpx;
+}
+.enddata-main .end-tilte{
+  display: inline-block;
+}
+.enddata-main .end-time{
+  display: inline-block;
+  font-size: 32rpx;
+}
+.object-text{
+  margin-bottom: 10rpx;
+  font-size:32rpx;
+}
+.object-content{
+  margin-bottom: 10rpx;
+  background-color:#f2f8fc;
+  padding:16rpx 14rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.object-content .chinese-text{
+  font-size: 32rpx;
+}
+.purple{
+  position: relative;
+}
+.purple:before{
+  content: '';
+  position: absolute;
+  left:-40rpx;
+  top:10rpx;
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  border:5rpx solid #5f1783;
+  z-index:1;
+}
+.add-message{
+  display: inline-block;
+  margin-top:20px;
+}
+.add-message .message-title{
+  font-size: 30rpx;
+}
+.addbtn-main{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30rpx;
+}
+.addbtn{
+  border-radius: 6px;
+  background-color: rgb(0,0,0);
+  width: 650rpx;
+  height: 88rpx;
+  color:#fff;
+  font-size: 32rpx;
+  outline:none;
+  border: none;
+}
+
+

@@ -1,0 +1,38 @@
+<view class="page-container">
+  <view class="lunar-container">
+    <view class="lunar-logo">
+      <image class="logo-image" src="/images/emter-logo.png"></image>
+    </view>
+    <view class="lunar-name-input">
+      <view class="name-image">
+        <image src="/images/emter-name.png" class="name-map"></image>
+      </view>
+      <input type="text" value="{{name}}" class="name-input" placeholder="请输入用户名称" bindinput="bindNameInput" />
+    </view>
+    <view class="lunar-pass-input">
+      <view class="lunar-pass-image">
+        <image src="/images/emter-code.png" class="lunar-pass-map"></image>
+      </view>
+      <input type="password" value="{{password}}" placeholder="请输入密码" class="pass-input" bindinput="bindPassInput"/>
+    </view>
+ 
+    <view class="show-container" hidden="{{hidden}}">
+      <view class="lunar-input-slip">
+        <view class="lunar-slip-image">
+          <image src="/images/emter-slip.png" class="lunar-slip-map"></image>
+        </view>
+        <view class="slip-title">{{toastText}}</view>
+      </view>
+    </view>
+
+      <button class="lunar-button-container" bindtap="startLogin">登录</button>
+    <view class="login-methods">
+      <view class="methods-title">其它方式登录</view>
+      <view class="others-way">
+        <image src="/images/icon_weixin.png" class="icon-weixin"></image>
+        <image src="/images/icon_qq.png" class="icon-qq"></image>
+        <image src="/images/icon_weiruan.png" class="icon-weiruan"></image>
+      </view>
+    </view>
+  </view>
+</view>

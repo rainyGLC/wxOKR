@@ -1,0 +1,35 @@
+<view class="page-container">
+  <view class="container-main-look">
+    <view class="coatmain">
+      <view class="Object-item">
+        <text class="headline">目标 Object</text>
+        <view class="text-content">
+          <text class="objective-title">{{objective}}</text>
+        </view>
+      </view>
+      <view class="keyresult-item">
+        <text class="headline">关键成果 Key Result</text>
+          <view class="key-text-content" 
+            wx:for="{{keyresults}}" wx:key="unique" 
+            wx:for-item="keyresultItem">
+            <text class="keyresult-title">{{keyresultItem.keyresult}}</text>
+          </view>
+      </view>
+      <view class="decline-item">
+        <text class="headline">OKR截止时间</text>
+        <view class="data-item">
+          <view class="dataEnd">{{deadline}}</view>
+          <view class="dataGood">
+            <text class="remainData" id="remainData">还有{{days}}天，要加油哦！</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="compile-btn">
+      <!-- <button class="compile" url="/pages/edit_okr/edit_okr?id={{id}}">编辑</button> -->
+
+      <button class="compile" data-id="{{id}}" bindtap="bindEdit">编辑</button>
+    </view>
+  </view>
+</view>
+

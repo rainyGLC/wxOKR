@@ -1,12 +1,20 @@
 {
   "pages":[
+    "pages/today_todos/today_todos",
+    "pages/reflection/reflection",
+    
+    "pages/history_todo/history_todo",
+    "pages/my_okr/my_okr",
+    "pages/view_okr/view_okr",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/add_okr/add_okr",
+    "pages/login/login",
+    "pages/edit_okr/edit_okr",
+    "pages/notreflection/notreflection",
+    
+    "pages/complete_todos/complete_todos"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "探月OKR"
   }
 }

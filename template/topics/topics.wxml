@@ -1,0 +1,67 @@
+<!-- <template name="topics">
+  <view class="page-container">
+    <view class="container-main">
+      <view class="container-main-list">
+        <view class="objectmain-container">
+          <view class="headline">
+            <view class="headline-title">目标 Object 
+              <text class="redtext">*</text>
+            </view>
+            <text class="subhead">心之所向，神之向往</text>
+          </view>
+          <view class="object-content">
+            <view class="chinese-title">
+              <text class="title-text">中文O</text>
+              <input  class="entry-input"  type="text" name="chinese"
+              placeholder="写下一个能点燃我的状态" value="{{objective}}" bindInput="objectiveInput" />
+            </view>
+          </view>
+        </view>
+        <view class="keyresult-conatiner">
+          <view class="headline">
+            <view>关键成果 Key Result 
+              <text class="redtext">*</text>
+            </view>
+            <text class="subhead">内心丰盈，积极行动</text>
+          </view>
+
+          <view class="key-content key-content-active" 
+            wx:for="{{keyresultArr}}" wx:key="unique">
+            <view  class="chinese-title">
+              <text class="title-text">KR</text>
+              <input  class="entry-input" type="text" name="chinese" 
+                placeholder='请输入KR' value="keyresultArr.keyresult" />
+            </view>
+            <view class="close-btn">X</view>
+          </view>
+        </view>
+
+        <button class="addbtn" bindtap="addInput">添加</button>
+
+        <view class="decline">
+          <view class="deadline-title">OKR截止时间 <text class="redtext">*</text></view>
+          <view class="decline-content">
+
+            <view class="section">
+              <view class="section__title">日期选择器</view>
+              <picker
+                mode="date"
+                value="{{date}}"
+                bindchange="bindDateChange"
+              >
+                <view class="picker">
+                  当前选择: {{date}}
+                </view>
+              </picker>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="options-btn">
+        <button class="off">取消</button>
+        <button class="save">保存</button>
+      </view>
+    </view>
+  </view>
+</template> -->

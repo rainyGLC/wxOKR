@@ -1,0 +1,37 @@
+<view class="page-container">
+  <view class="body-coat">
+    <view class="bodymain">
+      <view class="nav-list">
+        <navigator class="nav-list-item" url="/pages/today_todos/today_todos">今天</navigator>
+        <navigator class="nav-list-item" url="/pages/history_todo/history_todo">历史</navigator>
+        <navigator class="nav-list-item" url="/pages/my_okr/my_okr">我的OKR</navigator>
+      </view>
+      <view class="bodymain-container">
+        <view class="bodymain-container-list" wx:if="{{objectives.length}}">
+          <view class="container-list twodata"
+            wx:for="{{objectives}}" wx:key="unique" 
+            data-id="{{objectiveItem.id}}"
+            wx:for-item="objectiveItem"
+            bindtap="bindViewOkr">
+            <view class="enddata-main purple">
+              <text class="end-tilte">截止日期:</text>
+              <text class="end-time">{{objectiveItem.deadline}}</text>
+            </view>
+            <text class="object-text">目标 Object</text>
+            <view class="object-content">
+              <text class="chinese-text">{{objectiveItem.objective}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="add-message" wx:if="{{!objectives.length}}">
+      <text class="message-title">{{message}}</text>
+    </view>
+
+    <view class="addbtn-main">
+      <button class="addbtn" bindtap="bindAdd">添加OKR</button>
+    </view>
+  </view>
+</view>

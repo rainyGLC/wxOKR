@@ -1,0 +1,56 @@
+<!-- <import src="/template/topics/topics.wxml" />
+<template is="topics"></template> -->
+<view class="page-container">
+  <view class="container-main">
+    <view class="container-main-list">
+      <view class="objectmain-container">
+        <view class="headline">
+          <view class="headline-title">目标 Object 
+            <text class="redtext">*</text>
+          </view>
+          <text class="subhead">心之所向，神之向往</text>
+        </view>
+        <view class="object-content">
+          <view class="chinese-title">
+            <text class="title-text">中文O</text>
+            <input  class="entry-input"  type="text"
+             value="{{objective}}" bindinput="bindObjectiveInput" />
+          </view>
+        </view>
+      </view>
+      <view class="keyresult-conatiner">
+        <view class="headline">
+          <view>关键成果 Key Result 
+            <text class="redtext">*</text>
+          </view>
+          <text class="subhead">内心丰盈，积极行动</text>
+        </view>
+
+        <view class="key-content key-content-active" 
+          wx:for="{{keyresults}}" wx:key="unique" 
+          wx:for-item="item" wx:for-index="index">
+          <view  class="chinese-title">
+            <text class="title-text">KR</text>
+            <input  class="entry-input" type="text" placeholder='请输入KR' value="{{item.keyresult}}" data-id="{{item.id}}" data-index="{{index}}" bindinput="bindKeyresultInput" />
+          </view>
+          <view class="close-btn" data-id="{{item.id}}" data-index="{{index}}" bindtap="removeIndex">X</view>
+        </view>
+      </view>
+      <button class="addbtn" data-id="{{id}}"  data-index="{{index}}" bindtap="addInput">添加</button>
+      <view class="decline">
+        <view class="deadline-title">OKR截止时间 <text class="redtext">*</text></view>
+        <view class="decline-content">
+          <view class="section">
+            <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+              <view class="picker">选择截止时间: {{date}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="options-btn">
+      <button class="off" data-id="{{id}}" bindtap="bindCancel">取消</button>
+      <button class="save" data-id="{{id}}" bindtap="bindUpdate">保存</button>
+    </view>
+  </view>
+  </view>
